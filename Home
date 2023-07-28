@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark McLellan</title>
+    <link rel="stylesheet" type = "text/css" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="#home" class="navbar-name">Mark McLellan</a>
+        </div>
+        <div class="navbar-right">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="bio">
+        <img src="DSC_9002.JPG" alt="graduation" width="522" height="348">
+
+        <h1>
+            Hello, my name is Mark McLellan! I am currently an undergraduate student at Rutgers University, 
+            majoring in information technology and informatics with a minor in economics. I was born in Tokyo, Japan,
+            and moved to the United States in 2004, where I grew up in New Jersey.
+        </h1>
+    </div>
+
+    <hr>
+
+    <p>Education placeholder</p>
+</body>
+</html>
