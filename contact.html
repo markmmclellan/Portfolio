@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link rel="stylesheet" type = "text/css" href="styles.css">
+    <title>Contact | Mark McLellan</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="RunningMan.ico">
 </head>
 <body>
     <nav class="navbar">
@@ -12,10 +13,62 @@
             <a href="home.html" class="navbar-name">Mark McLellan</a>
         </div>
         <div class="navbar-right">
-            <a href="contact.html">Contact</a>
+            <a href="home.html">Home</a>
             <a href="project.html">Projects</a>
             <a href="resume.html">Resume</a>
+            <a class="active" href="contact.html">Contact</a>
         </div>
     </nav>
+
+    <main class="page">
+        <h1>Contact Me</h1>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p>
+                    I'd love to hear from you! Whether you have questions, collaboration opportunities,
+                    or just want to say hello, feel free to reach out using the form or directly through
+                    the links below.
+                </p>
+                <ul class="contact-links">
+                    <li>Email: <a href="mailto:markmmclellan@gmail.com">markmmclellan@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/markmmclellan/" target="_blank" rel="noopener">linkedin.com/in/markmmclellan</a></li>
+                </ul>
+            </div>
+
+            <form class="contact-form" action="mailto:markmmclellan@gmail.com" method="post" enctype="text/plain">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="fname" placeholder="John" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Doe" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message here..." required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Mark McLellan
+    </footer>
 </body>
 </html>
