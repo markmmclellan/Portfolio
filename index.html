@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark McLellan</title>
+    <meta name="description" content="Mark McLellan: IT professional and Rutgers graduate (B.A. in Information Technology &amp; Informatics) with CompTIA Security+ and A+. Portfolio, projects and resume.">
+    <link rel="canonical" href="https://markmmclellan.github.io/Personal-Website/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://markmmclellan.github.io/Personal-Website/">
+    <meta property="og:image" content="https://markmmclellan.github.io/Personal-Website/GraduationPortrait.JPG">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    <meta property="og:site_name" content="Mark McLellan">
+    <meta property="og:title" content="Mark McLellan | IT Professional">
+    <meta property="og:description" content="Rutgers graduate with CompTIA Security+ and A+. Portfolio, projects and resume.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://markmmclellan.github.io/Personal-Website/GraduationPortrait.JPG">
+    <meta name="twitter:title" content="Mark McLellan | IT Professional">
+    <meta name="twitter:description" content="Rutgers graduate with CompTIA Security+ and A+. Portfolio, projects and resume.">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="RunningMan.ico">
+</head>
+
+<body>
+    <canvas id="particles"></canvas>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="navbar-name">Mark McLellan</a>
+        </div>
+        <div class="navbar-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="page">
+        <section class="bio">
+            <img src="GraduationPortrait.JPG" alt="Graduation Portrait" width="260" height="260">
+
+            <div class="bio-text">
+                <h1>Hi, I'm <span id="typed-text"></span><span class="typed-cursor">|</span></h1>
+                <p>
+                    Rutgers University graduate with a Bachelor's in Information Technology & Informatics and a minor in Economics. Growing up between Tokyo and New Jersey sparked a lifelong curiosity for how complex systems work—whether that's troubleshooting hardware and software issues or exploring the ocean depths. I thrive on tackling hands-on technical challenges, and learning new technologies.
+                </p>
+                <ul class="tag-list">
+                    <li><span class="pill">B.A. in IT &amp; Informatics</span></li>
+                    <li>
+                        <a class="pill" href="https://www.credly.com/badges/8615ea12-2bb7-4987-b789-14b8177d3f2a/public_url" target="_blank" rel="noopener">CompTIA Security+</a>
+                        <div class="cert-popover">
+                            <div class="cert-popover-card">
+                                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8615ea12-2bb7-4987-b789-14b8177d3f2a" data-share-badge-host="https://www.credly.com"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="pill" href="https://www.credly.com/badges/a72372af-707b-4205-a9df-ca8b267f6a89/public_url" target="_blank" rel="noopener">CompTIA A+</a>
+                        <div class="cert-popover">
+                            <div class="cert-popover-card">
+                                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a72372af-707b-4205-a9df-ca8b267f6a89" data-share-badge-host="https://www.credly.com"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><span class="pill">TestOut Security Pro</span></li>
+                    <li><span class="pill">PADI Open Water Scuba Diver</span></li>
+                </ul>
+                <a class="button" href="resume.html">View My Resume</a>
+
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.linkedin.com/in/markmmclellan/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.91 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.5v6.24zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/markmmclellan" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                                <path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.61-3.37-1.21-3.37-1.21-.46-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.55 2.34 1.1 2.91.84.09-.66.35-1.1.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.2C22 6.58 17.52 2 12 2z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:markmmclellan@gmail.com" aria-label="Email">
+                            <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true">
+                                <path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 5.98L19.8 6H4.2zM20 7.98l-7.4 5.67a1 1 0 0 1-1.2 0L4 7.98V18h16V7.98z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">About Me</h2>
+            <p>
+                Outside of tech, I spend my free time reading, gaming, swimming, and traveling whenever I can. Growing up between Tokyo and New Jersey gave me a deep appreciation for exploring new places, experiencing different cultures, and adapting to new environments. I have a natural curiosity for how things work—whether that means breaking down complex game systems, staying active in the water, or taking on a new hands-on project. I just enjoy staying curious, learning new skills on the fly, and seeing how far I can push my interests.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Mark McLellan
+    </footer>
+
+    <script src="typewriter.js"></script>
+    <script src="tilt.js"></script>
+    <script src="particles.js"></script>
+    <script async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+</body>
+</html>

@@ -11,10 +11,10 @@
 <body>
     <nav class="navbar">
         <div class="navbar-left">
-            <a href="home.html" class="navbar-name">Mark McLellan</a>
+            <a href="index.html" class="navbar-name">Mark McLellan</a>
         </div>
         <div class="navbar-right">
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a class="active" href="project.html">Projects</a>
             <a href="resume.html">Resume</a>
             <a href="contact.html">Contact</a>
@@ -28,7 +28,51 @@
         <div class="project-grid">
             <div class="project-card">
                 <h3>Personal Website</h3>
-                <p>This site — built with HTML and CSS to showcase my background, resume, and projects.</p>
+                <p>This site — built with HTML, JavaScript, and CSS to showcase my background, resume, and projects.</p>
+            </div>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>V-Calc: Pokémon Champions Damage &amp; Speed Calculator</h3>
+                <p>A Showdown-style damage and turn-order calculator for Pokémon Champions, built with React and TypeScript on top of the @smogon/calc Champions ruleset. Pulls live usage data from op.gg via a custom scraper so popular moves, items, abilities, natures and Stat Point spreads apply in one click, supports Doubles with spread-move handling, team import/export from Showdown pastes, and saved presets. Deployed to GitHub Pages with a scheduled workflow that rebuilds every 6 hours to keep the data fresh.</p>
+                <a href="https://markmmclellan.github.io/v-calc/" target="_blank" rel="noopener">Live Calculator &rarr;</a>
+                <a href="https://github.com/markmmclellan/v-calc" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+            </div>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Self Hosted Local LLM &amp; Interface Stack</h3>
+                <p>An end-to-end local AI environment running on my own hardware. Koboldcpp serves a Gemma 4 12B (QAT) model as an API backend, and SillyTavern provides the front end for session management and prompt customization. I reach it from my phone from anywhere over Tailscale.</p>
+
+                <div class="flow" role="img" aria-label="Diagram: a phone connects over a Tailscale WireGuard tunnel to a home PC running SillyTavern, Koboldcpp and the Gemma 4 12B model.">
+                    <div class="flow-node">
+                        <strong>Phone</strong>
+                        <span>Browser, from anywhere</span>
+                    </div>
+                    <div class="flow-arrow" aria-hidden="true"></div>
+                    <div class="flow-node">
+                        <strong>Tailscale</strong>
+                        <span>WireGuard-encrypted mesh, no open ports</span>
+                    </div>
+                    <div class="flow-arrow" aria-hidden="true"></div>
+                    <div class="flow-node flow-host">
+                        <strong>Home PC</strong>
+                        <span>RTX 5080 16 GB &middot; 32 GB RAM</span>
+                        <ul>
+                            <li>SillyTavern (front end)</li>
+                            <li>Koboldcpp (API backend)</li>
+                            <li>Gemma 4 12B QAT</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4>Security</h4>
+                <p>I used Tailscale instead of port forwarding, so nothing on my home network is exposed to the public internet. Only my own authenticated devices can reach the model.</p>
+
+                <h4>What I learned</h4>
+                <p>I originally built it as a coding assistant, but models this small turned out to be poor at coding work. I repurposed it for creative writing and recreation, which is where it shines.</p>
             </div>
         </div>
     </main>
